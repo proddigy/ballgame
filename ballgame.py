@@ -47,7 +47,8 @@ while done != True:
                 quit()
     if screen.get_at((mouse.get_pos())) == (255, 255, 255, 255):
         done = True
-    
+if time.get_ticks()/1000>10:
+    print("Good Job")
 print('You lasted for', time.get_ticks()/1000, 'seconds!')
 quit()
 
